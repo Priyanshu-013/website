@@ -1,0 +1,370 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 1rem 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #6a11cb 30%, #2575fc 100%);
+    color: white;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content h1 span {
+    color: #ffcc00;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    max-width: 12%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+    background: #ff9900;
+}
+
+/* Features Section */
+.features {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #2575fc;
+}
+
+.card p {
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.testimonial p {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #2575fc;
+    color: white;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.cta .btn-cta {
+    background: #ffcc00;
+    color: #333;
+}
+
+
+/* Contact Section */
+.section.contact {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+    outline: none;
+}
+
+.btn-submit {
+    padding: 0.75rem 2rem;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f7f7f7, #eaeaea);
+    text-align: left;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-content h1 span {
+    color: #6a11cb;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+}
+
+.mission, .vision {
+    max-width: 40%;
+}
+
+.mission h2, .vision h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2575fc;
+}
+
+.mission p, .vision p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+}
+
+.team h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    max-width: 100px;
+    border: 3px solid #2575fc;
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+    color: #2575fc;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 0.9rem;
+}
